@@ -5,6 +5,8 @@ import Login from "./components/Login"
 import Register from "./components/Register"
 import{ Toaster } from 'react-hot-toast'
 import Create from "./components/Create"
+import PostPage from "./components/PostPage"
+import EditPost from "./components/EditPost"
 
 const App = () => {
   return (
@@ -16,6 +18,8 @@ const App = () => {
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
         <Route path="create" element={<Create />} />
+        <Route path="post/:id" element={<PostPage />} />
+        <Route path="edit/:id" element={<EditPost />} />
       </Routes>
     </BrowserRouter>
     <Toaster />

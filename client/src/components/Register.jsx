@@ -29,8 +29,8 @@ const Register = () => {
       <form onSubmit={register} className='flex flex-col items-center gap-3 w-full'>
         <input
           type="text"
-          name="email"
-          placeholder='Email'
+          name="username"
+          placeholder='Username'
           required
           value={username}
           onChange={e => setUsername(e.target.value)}
